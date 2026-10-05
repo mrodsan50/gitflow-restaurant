@@ -1,0 +1,28 @@
+{
+  "name": "typescript-tutorial",
+  "version": "2.0.0",
+  "description": "Tutorial sobre la sintaxis de TypeScript, como paso previo a Angular 17",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "play": "tsc --noEmit && tsx",
+    "play:fast": "tsx",
+    "dev": "node scripts/dev.mjs",
+    "dev:fast": "tsx watch",
+    "check": "tsc --noEmit",
+    "check:watch": "tsc --noEmit --watch",
+    "build": "tsc"
+  },
+  "keywords": [
+    "typescript",
+    "angular",
+    "dam"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "tsx": "^4.19.2",
+    "typescript": "~5.4.5"
+  }
+}

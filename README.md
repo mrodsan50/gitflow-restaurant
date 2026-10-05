@@ -1,1 +1,1 @@
-# gitflow-restaurant
+# typescript-template

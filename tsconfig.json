@@ -1,0 +1,45 @@
+{
+  // Configuración alineada con la que genera Angular 17 (`ng new`).
+  // Objetivo: que todo lo que se aprende aquí compile igual dentro de Angular.
+  "compilerOptions": {
+    /* ---------- Estructura de ficheros ---------- */
+    "rootDir": "./src",
+    "outDir": "./build",
+
+    /* ---------- Entorno ----------
+       Angular 17 usa ES2022 + resolución "bundler".
+       "bundler" permite importar sin extensión: import { x } from './y'  */
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022"],
+    "types": ["node"],
+
+    /* ---------- Decoradores ----------
+       Angular los necesita para @Component, @Injectable, @Input...  */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+
+    /* ---------- Comprobación estricta ----------
+       Mismo conjunto que activa Angular 17. Ni más ni menos. */
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    /* ---------- Interoperabilidad ---------- */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* ---------- Salida ---------- */
+    "sourceMap": true,
+    "declaration": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "build"]
+}
