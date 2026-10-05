@@ -11,7 +11,7 @@ let mesas: Mesa[] = [
     { numero: 2, capacidad: 4, ocupada: true },
     { numero: 3, capacidad: 6, ocupada: false }
 ];
-console.console.log("Hola .txt");
+console.log("Hola .txt");
 
 export function mostrarMesasDisponibles(): void {
     console.log(" Mesas disponibles:");
