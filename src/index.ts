@@ -1,5 +1,5 @@
-import { login } from "login";
-import { mostrarMesasDisponibles } from "table-list";
+import { login } from "./login";
+import { mostrarMesasDisponibles } from "./table.list";
 console.log("===== SISTEMA DE RESERVAS v1.0.0 =====");
 const acceso = login("ana@example.com", "1234");
 if (acceso) {
